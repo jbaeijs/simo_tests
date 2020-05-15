@@ -6,7 +6,8 @@ final class AdherentTest extends TestCase{
     
     public function testCanBeCreated(): void{
         $this->assertInstanceOf(
-            Adherent::class
+            Adherent::class,
+            Adhrent::fromString('Jean Pierre Dupont')
         );
     }
 }
